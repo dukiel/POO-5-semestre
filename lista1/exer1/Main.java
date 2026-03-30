@@ -1,13 +1,14 @@
 public class Main {
-        Produto p = new Produto();
+        public void main() {
+                Produto p = new Produto();
+                p.setNome("Garfo");
+                p.setPreco(10.0);
 
-        p.setNome("garfo");
-        p.setPreco(10);
+                // Usando os GETS para imprimir separadamente
+                System.out.println("Nome do produto: " + p.getNome());
+                System.out.println("Preço original: " + p.getPreco());
 
-        p.atualizaPrecoPerc(0);
-        p.fazerPromocao(5);
 
-        System.out.println(p.toString());
-
-    }
+                System.out.println(p.toString());
+        }
 }

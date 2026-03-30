@@ -1,5 +1,4 @@
-public class main {
-    public static void main(String[] args){
+public class Main {
         Produto p = new Produto();
 
         p.setNome("garfo");

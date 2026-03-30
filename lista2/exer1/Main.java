@@ -1,7 +1,6 @@
 public class Main {
     public static void main(String[] args) {
 
-        // Instanciando CommissionEmployee [cite: 78, 79]
         CommissionEmployee ce = new CommissionEmployee(
                 "João",
                 "Silva",
@@ -10,11 +9,12 @@ public class Main {
                 0.06
         );
 
-        // Exibindo dados (chama o toString que invoca o super.toString) [cite: 74, 78]
+        ce.setGrossSales(15000.0);
+        ce.setCommissionRate(132);
+
         System.out.println("--- Dados do Empregado Comissionado ---");
         System.out.println(ce.toString());
 
-        // Exibindo rendimentos específicos [cite: 73]
         System.out.printf("Rendimentos: R$ %.2f%n", ce.earnings());
     }
 }

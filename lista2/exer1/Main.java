@@ -10,7 +10,7 @@ public class Main {
         );
 
         ce.setGrossSales(15000.0);
-        ce.setCommissionRate(132);
+        ce.setCommissionRate(0.06);
 
         System.out.println("--- Dados do Empregado Comissionado ---");
         System.out.println(ce.toString());
